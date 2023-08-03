@@ -1,0 +1,6 @@
+Persons Data downloaded from :
+https://universe.roboflow.com/ocr-u10rm/person-rfnuq/dataset/3
+
+Command to do transfer learning for YOLOv5:
+
+python train.py --weights yolov5s.pt --data persons_ocr/data.yaml --device 0 --batch-size 8

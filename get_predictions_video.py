@@ -40,7 +40,7 @@ def runVideo(model, video):
     image_folder = frames_dir
     video_name = outputpath
 
-    images = [img for img in os.listdir(image_folder) if img.endswith(".png")]
+    images = [img for img in os.listdir(image_folder) if img.endswith(".jpg")]
     frame = cv2.imread(os.path.join(image_folder, images[0]))
     height, width, layers = frame.shape
 
